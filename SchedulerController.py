@@ -49,6 +49,7 @@ class SchedulerController:
     def sendToLive(self, convertedxml):
         if (not isinstance(convertedxml, basestring)):
             return
+        #try to send to LiveService
         liveservice = LiveService()
         try:
             return liveservice.createSchedule(convertedxml)
