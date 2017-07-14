@@ -12,7 +12,7 @@ class LiveService:
 
     def createSchedule(self, path):
 
-        resp = self.post('/schedules', path)
+        #resp = self.post('/schedules', path)
 
         return
 
